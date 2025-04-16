@@ -1,22 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Dashboard from './pages/Dashboard'
-import Login from './pages/Login'
-import Members from './pages/Members'
-import Events from './pages/Events'
-import Layout from './components/Layout'
+import AuthForm from './components/AuthForm'
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="members" element={<Members />} />
-          <Route path="events" element={<Events />} />
-        </Route>
-      </Routes>
-    </Router>
+    <div className="min-h-screen bg-gray-100 flex justify-center items-center">
+      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+        <h1 className="text-2xl font-bold text-center mb-6">Supabase Authentication</h1>
+        <AuthForm />
+      </div>
+    </div>
   )
 }
 
