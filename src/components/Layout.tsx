@@ -19,6 +19,9 @@ const Layout = () => {
             <li>
               <Link to="/events" className="block py-2 px-6 hover:bg-gray-100">Events</Link>
             </li>
+            <li>
+              <Link to="/vows" className="block py-2 px-6 hover:bg-gray-100">Vows</Link>
+            </li>
           </ul>
         </nav>
       </div>
